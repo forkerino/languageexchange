@@ -1,0 +1,41 @@
+{
+  "name": "languageexchange",
+  "version": "1.0.0",
+  "description": "FCC Backend Project (Book Club Alternative)",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm-run-all --parallel security-check open:src",
+    "security-check": "nsp check",
+    "open:src": "babel-node server.js"
+  },
+  "keywords": [
+    "FCC",
+    "Backend",
+    "Language",
+    "Exchange"
+  ],
+  "author": "Pieter Stokkink",
+  "license": "ISC",
+  "repository": "https://github.com/forkerino/languageexchange.git",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.2",
+    "passport": "^0.3.2",
+    "passport-facebook": "^2.1.1",
+    "passport-google": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "npm-run-all": "^4.0.2",
+    "webpack": "^2.4.1"
+  }
+}
